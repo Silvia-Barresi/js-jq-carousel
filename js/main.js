@@ -17,6 +17,10 @@ $(document).ready(function(){
 
   );
 
+  $('.circle').click(
+    circle
+  );
+
 
   // creo la funzione next
 
@@ -64,11 +68,8 @@ $(document).ready(function(){
     };
   };
 
-  // click on dots
+    // click on dots
 
-    function circle(){
-
-    }
 
 
 
