@@ -17,7 +17,7 @@ $(document).ready(function(){
 
   );
 
-  $('.circle').click(
+  $('.fa-circle').click(
     circle
   );
 
@@ -69,6 +69,40 @@ $(document).ready(function(){
   };
 
     // click on dots
+
+    function circle(){
+      var activeI = $('.vang img.active');
+      var activeC = $('i.active');
+
+      activeI.removeClass('active');
+      activeC.removeClass('active');
+
+      var ix = $('.fa-circle').index(this);
+      $('.vang img').eq(ix).addClass('active');
+      $(this).addClass('active');
+
+      // var data = $(this).data('indice');
+      // var activeI = $('.vang img.active');
+      // var activeC = $('i.active');
+      //
+      // activeC.removeClass('active');
+      // $(this).addClass('active');
+      //
+      // activeI.removeClass('active');
+      // $('.vang img').eq(data).addClass('active');
+
+
+
+    };
+
+    $(document).keydown(function(event){
+      if(event.key == "ArrowRight"){
+        nowI();
+      }else if (event.key == "ArrowLeft") {
+        thenI();
+      }
+    });
+
 
 
 
